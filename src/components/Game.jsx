@@ -35,7 +35,7 @@ const Game = () => {
   }, [computerChoice, humanChoice]);
 
   return (
-    <div className="border border-3 border-primary rounded p-3 my-3">
+    <div className="border border-3 border-warning rounded p-3 my-3">
       <div className="text-center">
         {" "}
         {/* Centering the content */}
@@ -46,7 +46,7 @@ const Game = () => {
           <button
             key={choice}
             type="button"
-            className={`btn btn-outline-info m-3`}
+            className={`btn btn-warning m-3`} style={{color:'white'}}
             onClick={() => handlePlayerChoice(choice)}
           >
             {choice}
@@ -72,7 +72,7 @@ const Game = () => {
 };
 
 const GameRules = () => (
-  <div className="border border-1 border-secondary rounded p-3 my-4">
+  <div className="border border-1 border-danger rounded p-3 my-4">
     <h6 className="ms-3">Game rules: </h6>
     <ul className="list-group list-group-flush">
       <li className="list-group-item">Rock vs. Rock: Tie</li>
